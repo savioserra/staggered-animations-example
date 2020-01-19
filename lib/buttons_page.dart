@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:html' as html;
 
 class ButtonsPage extends StatefulWidget {
   final int numberOfButtons;
@@ -32,46 +33,71 @@ class _ButtonsPageState extends State<ButtonsPage> with SingleTickerProviderStat
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 140.0),
-      child: LayoutBuilder(
-        builder: (ctx, cts) {
-          var buttonWidth = cts.maxWidth / widget.numberOfButtons - 10;
+    return Scaffold(
+      floatingActionButton: Container(
+        decoration: const BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(8.0)),
+          boxShadow: [BoxShadow(blurRadius: 8.0, offset: Offset(4.0, 4.0), color: Colors.black26)],
+        ),
+        child: Material(
+          borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+          child: InkWell(
+            borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+            onTap: () {
+              html.window.location.href = 'https://github.com/savioserra/staggered-animations-example';
+            },
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Image.network(
+                "https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png",
+                fit: BoxFit.scaleDown,
+                width: 100,
+              ),
+            ),
+          ),
+        ),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 140.0),
+        child: LayoutBuilder(
+          builder: (ctx, cts) {
+            var buttonWidth = cts.maxWidth / widget.numberOfButtons - 10;
 
-          return Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  for (var i = 0; i < widget.numberOfButtons; i++)
-                    AnimatedBuilder(
-                      animation: controller,
-                      builder: (ctx, child) => Button(
-                        width: buttonWidth,
-                        color: buttonColorAnimations[i].value,
+            return Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    for (var i = 0; i < widget.numberOfButtons; i++)
+                      AnimatedBuilder(
+                        animation: controller,
+                        builder: (ctx, child) => Button(
+                          width: buttonWidth,
+                          color: buttonColorAnimations[i].value,
+                        ),
+                      ),
+                  ],
+                ),
+                SizedBox(height: 10.0),
+                AnimatedBuilder(
+                  animation: controller,
+                  builder: (ctx, child) => Container(
+                    height: 100,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+                      gradient: LinearGradient(
+                        colors: [Colors.green, Colors.greenAccent],
+                        stops: [gradientAnimations[0].value, gradientAnimations[1].value],
                       ),
                     ),
-                ],
-              ),
-              SizedBox(height: 10.0),
-              AnimatedBuilder(
-                animation: controller,
-                builder: (ctx, child) => Container(
-                  height: 100,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    borderRadius: const BorderRadius.all(Radius.circular(8.0)),
-                    gradient: LinearGradient(
-                      colors: [Colors.green, Colors.greenAccent],
-                      stops: [gradientAnimations[0].value, gradientAnimations[1].value],
-                    ),
                   ),
-                ),
-              )
-            ],
-          );
-        },
+                )
+              ],
+            );
+          },
+        ),
       ),
     );
   }
