@@ -19,7 +19,11 @@ file:///C:/Apps/Flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/li
 file:///C:/Apps/Flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/utils.dart
 file:///C:/Apps/Flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/wrappers.dart
 file:///C:/Apps/Flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.1.8/lib/meta.dart
+file:///C:/Apps/Flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-1.0.1/lib/plugin_platform_interface.dart
 file:///C:/Apps/Flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.1.6/lib/typed_buffers.dart
+file:///C:/Apps/Flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_platform_interface-1.0.5/lib/method_channel_url_launcher.dart
+file:///C:/Apps/Flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_platform_interface-1.0.5/lib/url_launcher_platform_interface.dart
+file:///C:/Apps/Flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_web-0.1.0+2/lib/url_launcher_web.dart
 file:///C:/Apps/Flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/hash.dart
 file:///C:/Apps/Flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/aabb2.dart
 file:///C:/Apps/Flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/aabb3.dart
@@ -617,7 +621,11 @@ file:///C:/Apps/Flutter/packages/flutter/lib/src/widgets/widget_inspector.dart
 file:///C:/Apps/Flutter/packages/flutter/lib/src/widgets/widget_span.dart
 file:///C:/Apps/Flutter/packages/flutter/lib/src/widgets/will_pop_scope.dart
 file:///C:/Apps/Flutter/packages/flutter/lib/widgets.dart
-file:///C:/Users/Niddhogur/Documents/Projects/staggered_animations/.dart_tool/flutter_build/b4809db5b4da7cf69fdc67ebf77150ec/main.dart
+file:///C:/Apps/Flutter/packages/flutter_web_plugins/lib/flutter_web_plugins.dart
+file:///C:/Apps/Flutter/packages/flutter_web_plugins/lib/src/plugin_event_channel.dart
+file:///C:/Apps/Flutter/packages/flutter_web_plugins/lib/src/plugin_registry.dart
+file:///C:/Users/Niddhogur/Documents/Projects/staggered_animations/.dart_tool/flutter_build/bc9df8610b861477e3ca774792a49439/main.dart
 file:///C:/Users/Niddhogur/Documents/Projects/staggered_animations/.packages
 file:///C:/Users/Niddhogur/Documents/Projects/staggered_animations/lib/buttons_page.dart
+file:///C:/Users/Niddhogur/Documents/Projects/staggered_animations/lib/generated_plugin_registrant.dart
 file:///C:/Users/Niddhogur/Documents/Projects/staggered_animations/lib/main.dart
